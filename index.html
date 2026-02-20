@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İçimdekiler - Gizlilik Politikası</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #4CAF50, #2E7D32);
+        padding: 40px 20px;
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: #fff;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #2E7D32;
+        font-size: 32px;
+    }
+
+    .subtitle {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #666;
+        font-size: 16px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: #2E7D32;
+        font-size: 20px;
+    }
+
+    p {
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+    }
+
+    .highlight-box {
+        background: #E8F5E9;
+        padding: 15px;
+        border-left: 5px solid #2E7D32;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+
+    .delete-section {
+        margin-top: 40px;
+        padding: 25px;
+        background: #F1F8E9;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .delete-section h3 {
+        margin-bottom: 10px;
+        color: #1B5E20;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 24px;
+        background: #2E7D32;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #1B5E20;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 13px;
+        color: #777;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 25px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Gizlilik Politikası</h1>
+    <p class="subtitle">İçimdekiler Uygulaması Veri Güvenliği ve Hesap Silme Politikası</p>
+
+    <h2>1. Toplanan Veriler</h2>
+    <p>Uygulamamıza kayıt olurken aşağıdaki bilgiler toplanır:</p>
+    <ul>
+        <li>Ad – Soyad</li>
+        <li>Kullanıcı adı</li>
+        <li>E-posta adresi</li>
+        <li>Telefon numarası</li>
+        <li>Şifre (şifrelenmiş olarak)</li>
+    </ul>
+    <p>Tüm veriler Firebase altyapısı üzerinde güvenli şekilde saklanmaktadır.</p>
+
+    <h2>2. Veri Kullanım Amacı</h2>
+    <p>Toplanan veriler:</p>
+    <ul>
+        <li>Kişiselleştirilmiş kullanıcı deneyimi sunmak</li>
+        <li>Barkod tarama geçmişini yönetmek</li>
+        <li>Sağlık profilinize göre ürün uyarıları sağlamak</li>
+    </ul>
+
+    <h2>3. Üçüncü Taraf Servisler</h2>
+    <ul>
+        <li><strong>Google Firebase:</strong> Kimlik doğrulama, veritabanı ve depolama hizmetleri</li>
+        <li><strong>OpenFoodFacts API:</strong> Ürün bilgilerini almak için</li>
+        <li><strong>Yapay Zeka (AI) Servisleri:</strong> İleride eklenecek analiz özellikleri için (anonimleştirilmiş veri ile)</li>
+    </ul>
+
+    <h2>4. Veri Saklama ve Silme</h2>
+    <p>Verileriniz hesabınız aktif olduğu sürece saklanır. Dilediğiniz zaman hesabınızı ve tüm verilerinizi sildirme hakkına sahipsiniz.</p>
+
+    <div class="highlight-box">
+        Veri silme talebi için uygulama içinden işlem yapabilir veya aşağıdaki e-posta adresine mail gönderebilirsiniz.
+    </div>
+
+    <div class="delete-section">
+        <h3>Hesap Silme Talebi</h3>
+        <p>Hesabınızı silmek için bizimle iletişime geçin:</p>
+        <a href="mailto:icimdekilerdestek@gmail.com" class="btn">Mail Gönder</a>
+    </div>
+
+    <h2>5. Güvenlik</h2>
+    <p>Şifreleriniz Firebase Authentication sistemi üzerinde şifrelenmiş olarak tutulur ve tarafımızdan doğrudan görüntülenemez.</p>
+
+    <footer>
+        © 2026 İçimdekiler Uygulaması – Tüm Hakları Saklıdır.
+    </footer>
+
+</div>
+
+</body>
+</html>
