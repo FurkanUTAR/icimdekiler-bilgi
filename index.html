@@ -1,124 +1,68 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>İçimdekiler - Gizlilik Politikası</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İçimdekiler - Gizlilik Politikası</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Inter', sans-serif;
-        background: linear-gradient(135deg, #4CAF50, #2E7D32);
-        padding: 40px 20px;
-        color: #333;
-    }
-
-    .container {
-        max-width: 900px;
-        margin: auto;
-        background: #fff;
-        padding: 40px;
-        border-radius: 16px;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 10px;
-        color: #2E7D32;
-        font-size: 32px;
-    }
-
-    .subtitle {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #666;
-        font-size: 16px;
-    }
-
-    h2 {
-        margin-top: 30px;
-        margin-bottom: 10px;
-        color: #2E7D32;
-        font-size: 20px;
-    }
-
-    p {
-        line-height: 1.7;
-        margin-bottom: 15px;
-    }
-
-    ul {
-        margin-left: 20px;
-        margin-bottom: 15px;
-    }
-
-    li {
-        margin-bottom: 8px;
-        line-height: 1.6;
-    }
-
-    .highlight-box {
-        background: #E8F5E9;
-        padding: 15px;
-        border-left: 5px solid #2E7D32;
-        border-radius: 8px;
-        margin-top: 20px;
-    }
-
-    .delete-section {
-        margin-top: 40px;
-        padding: 25px;
-        background: #F1F8E9;
-        border-radius: 12px;
-        text-align: center;
-    }
-
-    .delete-section h3 {
-        margin-bottom: 10px;
-        color: #1B5E20;
-    }
-
-    .btn {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 12px 24px;
-        background: #2E7D32;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: 600;
-        transition: 0.3s ease;
-    }
-
-    .btn:hover {
-        background: #1B5E20;
-    }
-
-    footer {
-        text-align: center;
-        margin-top: 30px;
-        font-size: 13px;
-        color: #777;
-    }
-
-    @media (max-width: 600px) {
+    <style>
+        /* Senin mevcut CSS kodların - Olduğu gibi korundu */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            padding: 40px 20px;
+            color: #333;
+        }
         .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        h1 { text-align: center; margin-bottom: 10px; color: #2E7D32; font-size: 32px; }
+        .subtitle { text-align: center; margin-bottom: 30px; color: #666; font-size: 16px; }
+        h2 { margin-top: 30px; margin-bottom: 10px; color: #2E7D32; font-size: 20px; }
+        p { line-height: 1.7; margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; line-height: 1.6; }
+        .highlight-box {
+            background: #E8F5E9;
+            padding: 15px;
+            border-left: 5px solid #2E7D32;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .delete-section {
+            margin-top: 40px;
             padding: 25px;
+            background: #F1F8E9;
+            border-radius: 12px;
+            text-align: center;
         }
-        h1 {
-            font-size: 24px;
+        .delete-section h3 { margin-bottom: 10px; color: #1B5E20; }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background: #2E7D32;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s ease;
         }
-    }
-</style>
+        .btn:hover { background: #1B5E20; }
+        footer { text-align: center; margin-top: 30px; font-size: 13px; color: #777; }
+        @media (max-width: 600px) {
+            .container { padding: 25px; }
+            h1 { font-size: 24px; }
+        }
+    </style>
 </head>
 
 <body>
@@ -136,46 +80,53 @@
         <li>E-posta adresi</li>
         <li>Telefon numarası</li>
         <li>Şifre (şifrelenmiş olarak)</li>
+        <li>Barkod tarama geçmişi</li>
     </ul>
-    <p>Tüm veriler Firebase altyapısı üzerinde güvenli şekilde saklanmaktadır.</p>
+    <p>Tüm veriler Firebase altyapısı üzerinde güvenli şekilde saklanmaktadır. Verileriniz üçüncü şahıslara asla satılmaz.</p>
 
     <h2>2. Veri Kullanım Amacı</h2>
-    <p>Toplanan veriler:</p>
+    <p>Toplanan veriler aşağıdaki amaçlar doğrultusunda işlenir:</p>
     <ul>
         <li>Kişiselleştirilmiş kullanıcı deneyimi sunmak</li>
         <li>Barkod tarama geçmişini yönetmek</li>
-        <li>Sağlık profilinize göre ürün uyarıları sağlamak</li>
+        <li>(İsteğe bağlı) Sağlık profilinize göre ürün uyarıları ve alerjen takibi sağlamak</li>
     </ul>
 
     <h2>3. Üçüncü Taraf Servisler</h2>
+    <p>Uygulama işlevselliği için aşağıdaki güvenilir servis sağlayıcıları kullanılmaktadır:</p>
     <ul>
-        <li><strong>Google Firebase:</strong> Kimlik doğrulama, veritabanı ve depolama hizmetleri</li>
-        <li><strong>OpenFoodFacts API:</strong> Ürün bilgilerini almak için</li>
-        <li><strong>Yapay Zeka (AI) Servisleri:</strong> İleride eklenecek analiz özellikleri için (anonimleştirilmiş veri ile)</li>
+        <li><strong>Google Firebase:</strong> Kimlik doğrulama, bulut veritabanı ve depolama hizmetleri.</li>
+        <li><strong>OpenFoodFacts API:</strong> Ürün içerik bilgilerini almak için.</li>
+        <li><strong>Yapay Zeka (AI) Servisleri:</strong> Gelecekte eklenecek analizler için veriler anonimleştirilerek kullanılır.</li>
     </ul>
 
-    <h2>4. Veri Saklama ve Silme</h2>
-    <p>Verileriniz hesabınız aktif olduğu sürece saklanır. Dilediğiniz zaman hesabınızı ve tüm verilerinizi sildirme hakkına sahipsiniz.</p>
+    <h2>4. Çocukların Gizliliği</h2>
+    <p>Uygulamamız 13 yaş altı çocuklardan bilerek veri toplamaz. Eğer bir çocuğun bize kişisel veri sağladığını fark ederseniz, lütfen bizimle iletişime geçin; bu verileri derhal sunucularımızdan sileriz.</p>
+
+    <h2>5. Veri Saklama ve Silme</h2>
+    <p>Verileriniz hesabınız aktif olduğu sürece saklanır. Google Play politikaları gereği dilediğiniz zaman hesabınızı ve tüm verilerinizi sildirme hakkına sahipsiniz.</p>
 
     <div class="highlight-box">
-        Veri silme talebi için uygulama içinden işlem yapabilir veya aşağıdaki e-posta adresine mail gönderebilirsiniz.
+        <strong>Önemli:</strong> Veri silme talebiniz ardından tüm Firestore kayıtlarınız ve Authentication bilgileriniz 48-72 saat içerisinde kalıcı olarak temizlenir.
     </div>
 
     <div class="delete-section">
         <h3>Hesap Silme Talebi</h3>
-        <p>Hesabınızı silmek için bizimle iletişime geçin:</p>
-        <a  href="https://mail.google.com/mail/?view=cm&to=icimdekilerdestek@gmail.com" 
-            target="_blank" 
-            class="btn">
-            Mail Gönder
+        <p>Hesabınızı ve bağlı tüm verileri silmek için uygulama içindeki butonu kullanabilir veya doğrudan mail atabilirsiniz:</p>
+        <p><strong>E-posta:</strong> icimdekilerdestek@gmail.com</p>
+        <a href="https://mail.google.com/mail/?view=cm&to=icimdekilerdestek@gmail.com" 
+           target="_blank" 
+           class="btn">
+            Hemen Mail Gönder
         </a>
     </div>
 
-    <h2>5. Güvenlik</h2>
-    <p>Şifreleriniz Firebase Authentication sistemi üzerinde şifrelenmiş olarak tutulur ve tarafımızdan doğrudan görüntülenemez.</p>
+    <h2>6. Güvenlik</h2>
+    <p>Şifreleriniz Firebase Authentication sistemi üzerinde şifrelenmiş olarak tutulur. Tarafımızdan veya yetkisiz kişilerce doğrudan görüntülenemez.</p>
 
     <footer>
-        © 2026 İçimdekiler Uygulaması – Tüm Hakları Saklıdır.
+        © 2026 İçimdekiler Uygulaması – Tüm Hakları Saklıdır. <br>
+        Son Güncelleme: Şubat 2026
     </footer>
 
 </div>
