@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İçimdekiler - Gizlilik Politikası</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <style>
-        /* Senin mevcut CSS kodların - Olduğu gibi korundu */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
@@ -64,71 +61,57 @@
         }
     </style>
 </head>
-
 <body>
 
 <div class="container">
-
     <h1>Gizlilik Politikası</h1>
-    <p class="subtitle">İçimdekiler Uygulaması Veri Güvenliği ve Hesap Silme Politikası</p>
+    <p class="subtitle">İçimdekiler Uygulaması Veri Güvenliği ve Kullanım Koşulları</p>
 
-    <h2>1. Toplanan Veriler</h2>
-    <p>Uygulamamıza kayıt olurken aşağıdaki bilgiler toplanır:</p>
+    <h2>1. Toplanan Veriler ve Kapsam</h2>
+    <p>Uygulamamızın yeni özellikleri (AI ve Kalori Takibi) doğrultusunda şu veriler toplanmaktadır:</p>
     <ul>
-        <li>Ad – Soyad</li>
-        <li>Kullanıcı adı</li>
-        <li>E-posta adresi</li>
-        <li>Telefon numarası</li>
-        <li>Şifre (şifrelenmiş olarak)</li>
-        <li>Barkod tarama geçmişi</li>
-    </ul>
-    <p>Tüm veriler Firebase altyapısı üzerinde güvenli şekilde saklanmaktadır. Verileriniz üçüncü şahıslara asla satılmaz.</p>
-
-    <h2>2. Veri Kullanım Amacı</h2>
-    <p>Toplanan veriler aşağıdaki amaçlar doğrultusunda işlenir:</p>
-    <ul>
-        <li>Kişiselleştirilmiş kullanıcı deneyimi sunmak</li>
-        <li>Barkod tarama geçmişini yönetmek</li>
-        <li>(İsteğe bağlı) Sağlık profilinize göre ürün uyarıları ve alerjen takibi sağlamak</li>
+        <li><strong>Kimlik Bilgileri:</strong> Ad, e-posta adresi, kullanıcı adı.</li>
+        <li><strong>Sağlık ve Beslenme Verileri:</strong> Günlük kalori hedefleri, tüketilen gıdaların makro (protein, karbonhidrat, yağ) değerleri.</li>
+        <li><strong>Kullanım Verileri:</strong> Barkod tarama geçmişi ve AI asistanı ile yapılan sorgu kayıtları.</li>
+        <li><strong>Cihaz Bilgileri:</strong> Firebase üzerinden anonimleştirilmiş hata raporları ve kullanım istatistikleri.</li>
     </ul>
 
-    <h2>3. Üçüncü Taraf Servisler</h2>
-    <p>Uygulama işlevselliği için aşağıdaki güvenilir servis sağlayıcıları kullanılmaktadır:</p>
+    <h2>2. Veri İşleme ve AI Kullanımı</h2>
+    <p>Toplanan veriler şu amaçlarla kullanılır:</p>
     <ul>
-        <li><strong>Google Firebase:</strong> Kimlik doğrulama, bulut veritabanı ve depolama hizmetleri.</li>
-        <li><strong>OpenFoodFacts API:</strong> Ürün içerik bilgilerini almak için.</li>
-        <li><strong>Yapay Zeka (AI) Servisleri:</strong> Gelecekte eklenecek analizler için veriler anonimleştirilerek kullanılır.</li>
+        <li><strong>AI Analizi:</strong> Gıda içeriklerinin analiz edilmesi ve kullanıcı sorularının yanıtlanması için anonimleştirilmiş veriler AI modellerine iletilir.</li>
+        <li><strong>Beslenme Takibi:</strong> FatSecret ve OpenFoodFacts verileriyle entegre şekilde kalori takibi sunmak.</li>
+        <li><strong>Kişiselleştirme:</strong> Kullanıcıya özel sağlık uyarıları ve alerjen bildirimleri sağlamak.</li>
     </ul>
 
-    <h2>4. Çocukların Gizliliği</h2>
-    <p>Uygulamamız 13 yaş altı çocuklardan bilerek veri toplamaz. Eğer bir çocuğun bize kişisel veri sağladığını fark ederseniz, lütfen bizimle iletişime geçin; bu verileri derhal sunucularımızdan sileriz.</p>
+    <h2>3. Üçüncü Taraf Entegrasyonları</h2>
+    <p>Hizmet kalitesini artırmak için aşağıdaki güvenilir servislerle çalışıyoruz:</p>
+    <ul>
+        <li><strong>Google Firebase:</strong> Veri saklama, kimlik doğrulama ve AI Logic altyapısı.</li>
+        <li><strong>FatSecret & OpenFoodFacts:</strong> Gıda besin değerleri ve içerik kütüphanesine erişim.</li>
+        <li><strong>Gemini AI (Google):</strong> İçerik analizi ve akıllı asistan yanıtları (Veriler bu aşamada kimlikten arındırılır).</li>
+    </ul>
 
-    <h2>5. Veri Saklama ve Silme</h2>
-    <p>Verileriniz hesabınız aktif olduğu sürece saklanır. Google Play politikaları gereği dilediğiniz zaman hesabınızı ve tüm verilerinizi sildirme hakkına sahipsiniz.</p>
-
+    <h2>4. Veri Saklama ve Hesap Silme</h2>
+    <p>Google Play politikalarına tam uyum sağlıyoruz. Hesabınızı sildiğinizde tüm verileriniz kalıcı olarak temizlenir.</p>
     <div class="highlight-box">
-        <strong>Önemli:</strong> Veri silme talebiniz ardından tüm Firestore kayıtlarınız ve Authentication bilgileriniz 48-72 saat içerisinde kalıcı olarak temizlenir.
+        <strong>Veri Silme Garantisi:</strong> Hesap silme talebinden sonra kalori kayıtlarınız, tarama geçmişiniz ve kimlik bilgileriniz 72 saat içinde sistemlerimizden tamamen silinmektedir.
     </div>
 
     <div class="delete-section">
-        <h3>Hesap Silme Talebi</h3>
-        <p>Hesabınızı ve bağlı tüm verileri silmek için uygulama içindeki butonu kullanabilir veya doğrudan mail atabilirsiniz:</p>
+        <h3>Hesap & Veri Silme İşlemi</h3>
+        <p>Hesabınızı uygulama içindeki "Profil" sekmesinden silebilir veya bize ulaşabilirsiniz:</p>
         <p><strong>E-posta:</strong> icimdekilerdestek@gmail.com</p>
-        <a href="https://mail.google.com/mail/?view=cm&to=icimdekilerdestek@gmail.com" 
-           target="_blank" 
-           class="btn">
-            Hemen Mail Gönder
-        </a>
+        <a href="mailto:icimdekilerdestek@gmail.com" class="btn">Hesabımı Silmek İstiyorum</a>
     </div>
 
-    <h2>6. Güvenlik</h2>
-    <p>Şifreleriniz Firebase Authentication sistemi üzerinde şifrelenmiş olarak tutulur. Tarafımızdan veya yetkisiz kişilerce doğrudan görüntülenemez.</p>
+    <h2>5. Çocukların Gizliliği</h2>
+    <p>Uygulamamız gıda bilincini artırmayı hedefler ancak 13 yaş altı bireylerin ebeveyn denetimi olmadan veri paylaşmasını önermiyoruz. İzinsiz veri toplandığını fark ederseniz lütfen bizimle iletişime geçin.</p>
 
     <footer>
-        © 2026 İçimdekiler Uygulaması – Tüm Hakları Saklıdır. <br>
-        Son Güncelleme: Şubat 2026
+        © 2026 İçimdekiler Uygulaması – Furkan Utar <br>
+        Son Güncelleme: Mayıs 2026
     </footer>
-
 </div>
 
 </body>
